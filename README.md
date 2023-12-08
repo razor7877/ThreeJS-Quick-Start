@@ -9,4 +9,4 @@
 
  To use it, clone/download the repository, run "npm install" to download the dependencies, then use "npm run start" to start a local server (using Parcel).
 
-![](img/readme.Png "")
+![](img/readme.png "")

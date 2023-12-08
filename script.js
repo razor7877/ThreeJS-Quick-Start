@@ -45,9 +45,14 @@ window.addEventListener('resize', () => {
 // Test mesh
 const torusKnot = new THREE.Mesh(
     new THREE.TorusKnotGeometry(0.8, 0.35, 100, 16),
-
+    new THREE.MeshStandardMaterial({color:0xffffff, roughness:0.5, metalness:1.00})
 );
+
+const pointLight = new THREE.PointLight(0xffffff, 3);
+pointLight.position.set(0, 0, 10);
+
 scene.add(torusKnot);
+scene.add(pointLight);
 
 // Render loop
 const clock = new THREE.Clock();
